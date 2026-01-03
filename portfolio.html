@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solomon Chilumula - Portfolio</title>
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- External Dependencies -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Exo+2:wght@300;400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- Meta Tags -->
+    <meta name="description" content="Solomon Chilumula - AI Developer, Startup Founder & SAAS Architect Portfolio">
+    <meta property="og:title" content="Solomon Chilumula - AI Developer & Startup Founder">
+    <meta property="og:description" content="AI Developer & Startup Founder specializing in architecting end-to-end AI and SAAS solutions">
+    <meta property="og:image" content="nexxify-founder.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="theme-color" content="#0a0a0f">
+</head>
+
+<body data-theme="dark">
+    <!-- Skip Link for Accessibility -->
+    <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-content">
+            <div class="nav-left">
+                <h1 class="nav-name">SOLOMON CHILUMULA</h1>
+                <p class="nav-subtitle">AI Developer & Startup Founder</p>
+            </div>
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+        
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-container">
+                <div class="hero-image-wrapper">
+                    <div class="image-frame">
+                        <div class="frame-corner top-left"></div>
+                        <div class="frame-corner top-right"></div>
+                        <div class="frame-corner bottom-left"></div>
+                        <div class="frame-corner bottom-right"></div>
+                        <img src="nexxify-founder.jpg" alt="Solomon Chilumula" class="hero-image" width="400" height="400">
+                        <div class="image-glow"></div>
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <div class="hud-frame">
+                        <div class="hud-corners">
+                            <div class="corner top-left"></div>
+                            <div class="corner top-right"></div>
+                            <div class="corner bottom-left"></div>
+                            <div class="corner bottom-right"></div>
+                        </div>
+                        <h1 class="hero-name">I'm <span class="highlight">SOLOMON CHILUMULA</span></h1>
+                        <div class="hero-roles">
+                            <span class="role-primary">AI Developer & Startup Founder</span>
+                            <span class="role-divider">|</span>
+                            <span class="role-secondary">SAAS Architect</span>
+                        </div>
+                        <p class="hero-description">
+                            Entrepreneurial AI Developer specializing in architecting end-to-end AI and SAAS solutions with proven business acumen. Building intelligent systems that transform businesses and empower growth.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="https://drive.google.com/file/d/YOUR_RESUME_ID/view" target="_blank" class="btn btn-primary" id="downloadCV">
+                                <i class="fas fa-download"></i>
+                                <span>Download Resume</span>
+                            </a>
+                            <a href="#projects" class="btn btn-secondary">
+                                <i class="fas fa-eye"></i>
+                                <span>View My Work</span>
+                            </a>
+                        </div>
+                        <div class="hero-social">
+                            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-link" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/yourprofile" target="_blank" class="social-link" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://leetcode.com/yourprofile" target="_blank" class="social-link" title="LeetCode">
+                                <i class="fas fa-code"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon"><i class="fas fa-rocket"></i></span>
+                    <span>Featured Projects</span>
+                </h2>
+                <p class="section-subtitle">Innovative solutions powered by cutting-edge technology</p>
+            </div>
+            <div class="projects-container">
+                <div class="projects-scroller" role="group" aria-label="Projects carousel" tabindex="0">
+                    <div class="projects-grid">
+                        
+                        <!-- Project Card 1 -->
+                        <article class="project-card">
+                            <div class="card-glow"></div>
+                            <div class="project-header">
+                                <div class="project-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="project-links-header">
+                                    <a href="https://github.com/yourprofile/loomy-labs" target="_blank" class="project-link-icon" title="GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" target="_blank" class="project-link-icon" title="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">Loomy Labs - AI Education Platform</h3>
+                            <p class="project-description">
+                                Architected an AI-driven educational SAAS platform with personalized learning paths, leading to a 20% increase in user engagement. Integrated Generative AI model to create dynamic learning modules, successfully serving over 2,500 active students.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag framework">MERN Stack</span>
+                                <span class="tech-tag ai">Generative AI</span>
+                                <span class="tech-tag language">Python</span>
+                                <span class="tech-tag framework">React</span>
+                                <span class="tech-tag framework">Node.js</span>
+                            </div>
+                        </article>
+
+                        <!-- Project Card 2 -->
+                        <article class="project-card">
+                            <div class="card-glow"></div>
+                            <div class="project-header">
+                                <div class="project-icon">
+                                    <i class="fas fa-apple-whole"></i>
+                                </div>
+                                <div class="project-links-header">
+                                    <a href="https://github.com/yourprofile/nutrimony" target="_blank" class="project-link-icon" title="GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" target="_blank" class="project-link-icon" title="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">Nutrimony - Personalized Nutrition SAAS</h3>
+                            <p class="project-description">
+                                Launched a full-stack SAAS application providing personalized nutrition plans, acquiring over 1,000 paying customers in the first six months. Engineered secure user authentication system and backend logic to process user data and generate custom reports in under 5 seconds.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag framework">MERN Stack</span>
+                                <span class="tech-tag framework">Node.js</span>
+                                <span class="tech-tag framework">React</span>
+                                <span class="tech-tag database">MongoDB</span>
+                                <span class="tech-tag tools">JWT Auth</span>
+                            </div>
+                        </article>
+
+                        <!-- Project Card 3 -->
+                        <article class="project-card">
+                            <div class="card-glow"></div>
+                            <div class="project-header">
+                                <div class="project-icon">
+                                    <i class="fas fa-hospital"></i>
+                                </div>
+                                <div class="project-links-header">
+                                    <a href="https://github.com/SolomonLipson/hospital-management-system" target="_blank" class="project-link-icon" title="GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" target="_blank" class="project-link-icon" title="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">Hospital Management System</h3>
+                            <p class="project-description">
+                                Developed a comprehensive full-stack hospital management system featuring patient registration, diet chart management, staff coordination, and task tracking. Implemented RESTful APIs with Prisma ORM for efficient database operations.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag framework">Node.js</span>
+                                <span class="tech-tag framework">Express</span>
+                                <span class="tech-tag database">Prisma ORM</span>
+                                <span class="tech-tag language">TypeScript</span>
+                                <span class="tech-tag framework">NestJS</span>
+                            </div>
+                        </article>
+
+                        <!-- Project Card 4 -->
+                        <article class="project-card">
+                            <div class="card-glow"></div>
+                            <div class="project-header">
+                                <div class="project-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="project-links-header">
+                                    <a href="#" target="_blank" class="project-link-icon" title="GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" target="_blank" class="project-link-icon" title="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">AI Chatbot with RAG Pipeline</h3>
+                            <p class="project-description">
+                                Built an intelligent chatbot using LangChain and RAG pipelines, achieving 35% improvement in response accuracy. Integrated with multiple data sources for context-aware conversations.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag ai">LangChain</span>
+                                <span class="tech-tag ai">RAG</span>
+                                <span class="tech-tag language">Python</span>
+                                <span class="tech-tag cloud">AWS</span>
+                                <span class="tech-tag database">Vector DB</span>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <span>Scroll to see more</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience" id="experience">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon"><i class="fas fa-briefcase"></i></span>
+                    <span>Experience</span>
+                </h2>
+                <p class="section-subtitle">Building innovative solutions across industries</p>
+            </div>
+            <div class="timeline">
+                
+                <!-- Experience Item 1 -->
+                <article class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="company-info">
+                                <h3 class="company-name">Nexxify</h3>
+                                <div class="role-info">
+                                    <span class="role-title">Founder & CEO</span>
+                                    <span class="duration"><i class="far fa-calendar-alt"></i> June 2024 - Present</span>
+                                </div>
+                            </div>
+                            <div class="company-logo">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                        </div>
+                        <div class="experience-content">
+                            <p>Spearheads strategy and operations for a digital agency delivering custom AI, web, and mobile solutions to a diverse client portfolio. Directs the company's technical vision, architecting and delivering 10+ advanced AI-powered SAAS products for clients annually.</p>
+                            <div class="experience-highlights">
+                                <span class="highlight-item"><i class="fas fa-check"></i> Led team of 5+ developers</span>
+                                <span class="highlight-item"><i class="fas fa-check"></i> 10+ AI products delivered</span>
+                                <span class="highlight-item"><i class="fas fa-check"></i> $50K+ revenue generated</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag ai">AI/ML</span>
+                            <span class="tech-tag tools">SAAS Architecture</span>
+                            <span class="tech-tag tools">Business Strategy</span>
+                            <span class="tech-tag framework">Full Stack</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Experience Item 2 -->
+                <article class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="company-info">
+                                <h3 class="company-name">Petklik Inc.</h3>
+                                <div class="role-info">
+                                    <span class="role-title">Full Stack Developer</span>
+                                    <span class="duration"><i class="far fa-calendar-alt"></i> July 2024 - Present</span>
+                                </div>
+                            </div>
+                            <div class="company-logo">
+                                <i class="fas fa-paw"></i>
+                            </div>
+                        </div>
+                        <div class="experience-content">
+                            <p>Leads end-to-end development of a pet care mobile app, successfully launching to an initial user base of 5,000+. Engineers a scalable backend with Node.js and Django, maintaining 99.9% uptime.</p>
+                            <div class="experience-highlights">
+                                <span class="highlight-item"><i class="fas fa-check"></i> 5,000+ users</span>
+                                <span class="highlight-item"><i class="fas fa-check"></i> 99.9% uptime</span>
+                                <span class="highlight-item"><i class="fas fa-check"></i> Mobile-first design</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag framework">React Native</span>
+                            <span class="tech-tag framework">Node.js</span>
+                            <span class="tech-tag framework">Django</span>
+                            <span class="tech-tag database">PostgreSQL</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Experience Item 3 -->
+                <article class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="company-info">
+                                <h3 class="company-name">chatcells.ai</h3>
+                                <div class="role-info">
+                                    <span class="role-title">LangChain Developer Intern</span>
+                                    <span class="duration"><i class="far fa-calendar-alt"></i> Dec 2023 - June 2024</span>
+                                </div>
+                            </div>
+                            <div class="company-logo">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                        </div>
+                        <div class="experience-content">
+                            <p>Integrated conversational AI agents into web applications using LangChain, automating 40% of routine customer support inquiries. Engineered RAG pipelines for LLMs, increasing response accuracy by over 35%.</p>
+                            <div class="experience-highlights">
+                                <span class="highlight-item"><i class="fas fa-check"></i> 40% automation achieved</span>
+                                <span class="highlight-item"><i class="fas fa-check"></i> 35% accuracy improvement</span>
+                                <span class="highlight-item"><i class="fas fa-check"></i> Production-grade RAG</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag ai">LangChain</span>
+                            <span class="tech-tag ai">RAG Pipelines</span>
+                            <span class="tech-tag ai">LLMs</span>
+                            <span class="tech-tag language">Python</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon"><i class="fas fa-cogs"></i></span>
+                    <span>Technical Skills</span>
+                </h2>
+                <p class="section-subtitle">Technologies I work with to bring ideas to life</p>
+            </div>
+            <div class="skills-grid">
+                
+                <!-- Languages -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag language">Java</span>
+                        <span class="skill-tag language">Python</span>
+                        <span class="skill-tag language">JavaScript</span>
+                        <span class="skill-tag language">TypeScript</span>
+                        <span class="skill-tag language">C</span>
+                        <span class="skill-tag language">SQL</span>
+                    </div>
+                </div>
+
+                <!-- Frameworks -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3>Frameworks</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag framework">React.js</span>
+                        <span class="skill-tag framework">Node.js</span>
+                        <span class="skill-tag framework">Express.js</span>
+                        <span class="skill-tag framework">MERN Stack</span>
+                        <span class="skill-tag framework">Django</span>
+                        <span class="skill-tag framework">NestJS</span>
+                    </div>
+                </div>
+
+                <!-- AI/ML -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI & Machine Learning</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag ai">TensorFlow</span>
+                        <span class="skill-tag ai">PyTorch</span>
+                        <span class="skill-tag ai">NumPy</span>
+                        <span class="skill-tag ai">LangChain</span>
+                        <span class="skill-tag ai">Generative AI</span>
+                        <span class="skill-tag ai">RAG</span>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag database">MongoDB</span>
+                        <span class="skill-tag database">MySQL</span>
+                        <span class="skill-tag database">PostgreSQL</span>
+                        <span class="skill-tag database">DynamoDB</span>
+                        <span class="skill-tag database">Supabase</span>
+                        <span class="skill-tag database">Firebase</span>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Cloud & DevOps</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag cloud">AWS Lambda</span>
+                        <span class="skill-tag cloud">AWS S3</span>
+                        <span class="skill-tag cloud">Firebase</span>
+                        <span class="skill-tag cloud">GCP</span>
+                        <span class="skill-tag tools">Docker</span>
+                        <span class="skill-tag tools">CI/CD</span>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools & Competencies</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag tools">Git</span>
+                        <span class="skill-tag tools">VS Code</span>
+                        <span class="skill-tag tools">Postman</span>
+                        <span class="skill-tag competency">DSA</span>
+                        <span class="skill-tag competency">OOP</span>
+                        <span class="skill-tag competency">System Design</span>
+                        <span class="skill-tag competency">Agile</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education" id="education">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon"><i class="fas fa-graduation-cap"></i></span>
+                    <span>Education & Certifications</span>
+                </h2>
+                <p class="section-subtitle">Academic foundation and continuous learning</p>
+            </div>
+            <div class="education-timeline">
+                
+                <article class="education-item">
+                    <div class="education-marker">
+                        <span class="edu-icon">🎓</span>
+                    </div>
+                    <div class="education-card">
+                        <h3>Bachelor of Technology in Computer Science</h3>
+                        <p class="institution"><i class="fas fa-university"></i> Kakatiya Institute of Technology</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Warangal, Telangana</p>
+                        <div class="edu-details">
+                            <span class="edu-period"><i class="far fa-calendar-alt"></i> Graduating May 2026</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="education-item">
+                    <div class="education-marker">
+                        <span class="edu-icon">🤖</span>
+                    </div>
+                    <div class="education-card">
+                        <h3>Machine Learning Certificate</h3>
+                        <p class="institution"><i class="fas fa-university"></i> Columbia University</p>
+                        <p class="location"><i class="fas fa-globe"></i> Online Program</p>
+                        <div class="edu-details">
+                            <span class="edu-period"><i class="fas fa-spinner"></i> In Progress</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="education-item">
+                    <div class="education-marker">
+                        <span class="edu-icon">⚡</span>
+                    </div>
+                    <div class="education-card">
+                        <h3>Prompt Engineering for LLMs</h3>
+                        <p class="institution"><i class="fas fa-university"></i> Columbia University</p>
+                        <p class="location"><i class="fas fa-globe"></i> Online Program</p>
+                        <div class="edu-details">
+                            <span class="edu-period"><i class="fas fa-spinner"></i> In Progress</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon"><i class="fas fa-envelope"></i></span>
+                    <span>Get In Touch</span>
+                </h2>
+                <p class="section-subtitle">Let's collaborate and build something amazing together</p>
+            </div>
+            <div class="contact-container">
+                
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <p>+91 9494814645</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p>solomon@nexxify.in</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>Hanamkonda, Telangana, India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links-contact">
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-link-large" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/yourprofile" target="_blank" class="social-link-large" title="GitHub">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://leetcode.com/yourprofile" target="_blank" class="social-link-large" title="LeetCode">
+                            <i class="fas fa-code"></i>
+                            <span>LeetCode</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>&copy; 2024 Solomon Chilumula. All Rights Reserved.</p>
+            </div>
+            <div class="footer-right">
+                <p>Built with <i class="fas fa-heart" style="color: var(--spider-red);"></i> and lots of <i class="fas fa-coffee" style="color: var(--premium-gold);"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
